@@ -1,0 +1,8 @@
+app.py  /usr/lib/lucida-commandcenter/app.py
+controllers /usr/lib/lucida-commandcenter/controllers
+data /usr/lib/lucida-commandcenter/data
+lucidaservice /usr/lib/lucida-commandcenter/lucidaservice
+lucidatypes /usr/lib/lucida-commandcenter/lucidatypes
+static /usr/lib/lucida-commandcenter/static
+templates /usr/lib/lucida-commandcenter/templates
+
