@@ -1,0 +1,152 @@
+Source: lucida
+Section: misc
+Priority: optional
+Maintainer: Luca Vercelli <luca.vercelli.to@gmail.com>
+Build-Depends: debhelper (>=9), default-jdk (>=1.8),
+ gfortran,
+ make,
+ ant,
+ gcc,
+ g++,
+ make,
+ automake,
+ autoconf,
+ autoconf-archive,
+ python2.7-dev,
+ libboost-dev,
+ libboost-all-dev,
+ libevent-dev,
+ libdouble-conversion-dev,
+ libtool,
+ liblz4-dev,
+ liblzma-dev,
+ binutils-dev,
+ libjemalloc-dev,
+ libtesseract-dev,
+ libopenblas-dev,
+ libblas-dev,
+ libatlas-dev,
+ libatlas-base-dev,
+ libiberty-dev,
+ liblapack-dev,
+ libsox-dev,
+ cmake,
+ libgflags-dev, libgoogle-glog-dev, liblmdb-dev,
+ libleveldb-dev, libsnappy-dev, libhdf5-serial-dev,
+ libkrb5-dev,
+ libsasl2-dev,
+ libnuma-dev,
+ python-pip,
+ thrift-compiler, python-thrift
+Standards-Version: 3.9.8
+Homepage: https://github.com/claritylab/lucida
+#Vcs-Git: git://anonscm.debian.org/collab-maint/lucida.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/lucida.git
+
+Package: lucida-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, zlib1g-dev,
+ libatlas3-base,
+ libblas3,
+ libblas-dev,
+ liblapack3,
+ liblapack-dev,
+ libc6,
+ software-properties-common,
+ wget,
+ git,
+ curl,
+ pkg-config,
+ zip,
+ unzip,
+ sox,
+ bison,
+ swig,
+ subversion,
+ libssl-dev,
+ libprotoc-dev,
+ supervisor,
+ flac,
+ gawk,
+ imagemagick,
+ bc,
+ python-numpy,
+ flex,
+ scons,
+ python-gi,
+ python-gobject,
+ python-gobject-2,
+ vim,
+ memcached,
+#istall_java:
+ default-jre (>=1.8), 
+#istall_opencv:
+ libopencv-core2.4,
+#istall_mongodb:
+ mongodb
+#python_requirements (some of):
+ python-flask, python-flask-login, python3-flaskext.wtf, python-jinja2, python-markupsafe, python-wtforms,
+ python-werkzeug, python-backports-abc, python-backports.ssl-match-hostname,
+ python-cached-property, python-certifi,
+ python-defer,
+ python-scikits-learn, python-scipy, python-numpy, python-reportlab,
+ python-pymongo, python-pandas, python-itsdangerous, python-greenlet, python-docker, python-wheel, python-six,
+ python-xdg, python-tornado, python-serial, python-urllib3,
+ python-thrift, python-singledispatch
+Description: Speech and vision based intelligent personal assistant
+ Lucida is a speech and vision based intelligent personal assistant inspired by Sirius.
+ Lucida is made up of a set of back-end services, plus a "command center" that calls the correct service
+ according to the user request.
+ .
+ This package contains the command-center module.
+
+Package: lucida-imagematching
+Architecture: any
+Depends: lucida
+Description: Speech and vision based intelligent personal assistant
+ Lucida is a speech and vision based intelligent personal assistant inspired by Sirius.
+ .
+ This package contains the image matching module.
+ 
+Package: lucida-questionanswering
+Architecture: any
+Depends: lucida
+Description: Speech and vision based intelligent personal assistant
+ Lucida is a speech and vision based intelligent personal assistant inspired by Sirius.
+ .
+ This package contains the Q/A module.
+ 
+Package: lucida-calendar
+Architecture: any
+Depends: lucida
+Description: Speech and vision based intelligent personal assistant
+ Lucida is a speech and vision based intelligent personal assistant inspired by Sirius.
+ .
+ This package contains the Google-Calendar module.
+ 
+Package: lucida-speechrecognition
+Architecture: any
+Depends: lucida
+Description: Speech and vision based intelligent personal assistant
+ Lucida is a speech and vision based intelligent personal assistant inspired by Sirius.
+ .
+ This package contains the speech recognition module.
+ 
+Package: lucida-djinntonic
+Architecture: any
+Depends: lucida
+Description: Speech and vision based intelligent personal assistant
+ Lucida is a speech and vision based intelligent personal assistant inspired by Sirius.
+ .
+ This package contains the djinntonic module.
+ 
+Package: lucida-all
+Architecture: all
+Depends: lucida, lucida-commandcenter, lucida-imagematching, lucida-questionanswering,
+ lucida-calendar, lucida-speechrecognition, lucida-djinntonic
+Description: Speech and vision based intelligent personal assistant
+ Lucida is a speech and vision based intelligent personal assistant inspired by Sirius.
+ .
+ This is a virtual package depending on all currently packaged modules.
+ 
+
