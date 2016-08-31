@@ -3,7 +3,7 @@ Section: misc
 Priority: optional
 Maintainer: Luca Vercelli <luca.vercelli.to@gmail.com>
 Build-Depends: debhelper (>=9), 
- make, thrift-compiler, python-thrift
+ make, thrift-compiler, python-thrift, quilt
 Standards-Version: 3.9.8
 Homepage: https://github.com/claritylab/lucida
 #Vcs-Git: git://anonscm.debian.org/collab-maint/lucida.git

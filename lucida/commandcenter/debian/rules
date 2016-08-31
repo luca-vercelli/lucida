@@ -15,6 +15,21 @@ VER=0
 # package maintainers to append LDFLAGS
 #export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
-
 %:
 	dh $@ 
+
+override_dh_auto_clean:
+	QUILT_PATCHES="debian/patches" quilt pop -a || true
+	rm -rf .pc
+	dh_auto_clean
+
+override_dh_auto_build:
+	QUILT_PATCHES="debian/patches" quilt push -a
+	dh_auto_build
+
+override_dh_auto_install:
+	QUILT_PATCHES="debian/patches" quilt pop -a
+	dh_auto_install
+
+
+
