@@ -16,13 +16,17 @@ Homepage: https://github.com/claritylab/lucida
 #
 Package: lucida-openephyra
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends},
- mongodb, default-jre (>=1.8)
+Depends: ${shlibs:Depends}, ${misc:Depends}, libc,
+ default-jre (>=1.8),
+ liblog4j2-java, libjetty8-java, libmongodb-java, libhtmlparser-java,
+ libtrove-java, libgoogle-gson-java, libcommons-logging-java,
+ libjsoup-java, libthrift-java, libslf4j-java, libservlet3.0-java 
 Provides: lucida-quesionanswering
 Description: Speech and vision based intelligent personal assistant
- Lucida is a speech and vision based intelligent personal assistant inspired by Sirius.
- Lucida is made up of a set of back-end services, plus a "command center" that calls the correct service
- according to the user request.
+ Lucida is a speech and vision based intelligent personal assistant
+ inspired by Sirius. Lucida is made up of a set of back-end services,
+ plus a "command center" that calls the correct service according to the
+ user request.
  .
  This package contains the default question-answering module, i.e. OpenEphyra.
 
