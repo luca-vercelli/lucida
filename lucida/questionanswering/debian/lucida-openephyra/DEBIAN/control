@@ -1,0 +1,15 @@
+Package: lucida-openephyra
+Version: 0-1
+Architecture: i386
+Maintainer: Luca Vercelli <luca.vercelli.to@gmail.com>
+Installed-Size: 114286
+Depends: mongodb, default-jre (>= 1.8)
+Section: misc
+Priority: optional
+Homepage: https://github.com/claritylab/lucida
+Description: Speech and vision based intelligent personal assistant
+ Lucida is a speech and vision based intelligent personal assistant inspired by Sirius.
+ Lucida is made up of a set of back-end services, plus a "command center" that calls the correct service
+ according to the user request.
+ .
+ This package contains the default question-answering module, i.e. OpenEphyra.

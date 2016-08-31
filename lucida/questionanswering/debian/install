@@ -1,0 +1,5 @@
+OpenEphyra/start_server.sh  /usr/lib/lucida-openephyra
+OpenEphyra/conf /usr/lib/lucida-openephyra
+OpenEphyra/lib /usr/lib/lucida-openephyra
+OpenEphyra/res /usr/lib/lucida-openephyra
+
