@@ -21,7 +21,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  python-scikits-learn, python-scipy, python-numpy, python-reportlab,
  python-pymongo, python-pandas, python-itsdangerous, python-greenlet, python-docker, python-wheel, python-six,
  python-xdg, python-tornado, python-serial, python-urllib3,
- python-thrift, python-singledispatch
+ python-thrift, python-singledispatch, python-memcache
 Description: Speech and vision based intelligent personal assistant
  Lucida is a speech and vision based intelligent personal assistant inspired by Sirius.
  Lucida is made up of a set of back-end services, plus a "command center" that calls the correct service
