@@ -12,7 +12,7 @@ Homepage: https://github.com/claritylab/lucida
 Package: lucida-core
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
- mongodb, memcached,
+ mongodb, memcached, python,
 #python_requirements (not sure which are needed):
  python-flask, python-flask-login, python3-flaskext.wtf, python-jinja2, python-markupsafe, python-wtforms,
  python-werkzeug, python-backports-abc, python-backports.ssl-match-hostname,
@@ -23,9 +23,10 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  python-xdg, python-tornado, python-serial, python-urllib3,
  python-thrift, python-singledispatch, python-memcache
 Description: Speech and vision based intelligent personal assistant
- Lucida is a speech and vision based intelligent personal assistant inspired by Sirius.
- Lucida is made up of a set of back-end services, plus a "command center" that calls the correct service
- according to the user request.
+ Lucida is a speech and vision based intelligent personal assistant
+ inspired by Sirius. Lucida is made up of a set of back-end services,
+ plus a "command center" that calls the correct service according to the
+ user request.
  .
  This package contains the command-center (i.e. core) module.
 
