@@ -18,6 +18,7 @@ Package: lucida-openephyra
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
  mongodb, default-jre (>=1.8)
+Provides: lucida-quesionanswering
 Description: Speech and vision based intelligent personal assistant
  Lucida is a speech and vision based intelligent personal assistant inspired by Sirius.
  Lucida is made up of a set of back-end services, plus a "command center" that calls the correct service

@@ -18,6 +18,19 @@ VER=0
 %:
 	dh $@
 
+override_dh_auto_clean:
+	QUILT_PATCHES="debian/patches" quilt pop -a || true
+	rm -rf .pc
+	dh_auto_clean
+
+override_dh_auto_build:
+	QUILT_PATCHES="debian/patches" quilt push -a
+	dh_auto_build
+
+override_dh_install:
+	dh_install
+	QUILT_PATCHES="debian/patches" quilt pop -a
+
 override_dh_shlibdeps:
 	#skip shlibdeps...
 

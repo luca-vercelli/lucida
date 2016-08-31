@@ -17,7 +17,7 @@ fi
 # Author: Luca Vercelli <luca.vercelli.to@gmail.com>
 
 DESC="lucida-commandcenter"
-DAEMON="cd /usr/lib/lucida-openephira && start_server.sh"
+DAEMON="/usr/lib/lucida-openephyra/start_server.sh"
 
 # This is an example to start a single forking daemon capable of writing
 # a pid file. To get other behaviors, implement do_start(), do_stop() or
