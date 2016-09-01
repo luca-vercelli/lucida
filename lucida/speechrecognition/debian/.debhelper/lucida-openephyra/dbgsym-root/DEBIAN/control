@@ -1,0 +1,13 @@
+Package: lucida-openephyra-dbgsym
+Source: lucida-openephyra
+Version: 0-1
+Architecture: i386
+Maintainer: Luca Vercelli <luca.vercelli.to@gmail.com>
+Installed-Size: 10069
+Depends: lucida-openephyra (= 0-1)
+Section: debug
+Priority: extra
+Homepage: https://github.com/claritylab/lucida
+Description: Debug symbols for lucida-openephyra
+Auto-Built-Package: debug-symbols
+Build-Ids: 93cad980c62615f9acb4eb6cf842cb6c85af69cd

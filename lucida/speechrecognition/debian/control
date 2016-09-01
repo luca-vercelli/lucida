@@ -1,0 +1,24 @@
+Source: lucida-kaldi-gst-asr
+Section: misc
+Priority: optional
+Maintainer: Luca Vercelli <luca.vercelli.to@gmail.com>
+Build-Depends: debhelper (>=9), 
+ ???
+Standards-Version: 3.9.8
+Homepage: https://github.com/claritylab/lucida
+#Vcs-Git: git://anonscm.debian.org/collab-maint/lucida.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/lucida.git
+
+Package: lucida-openephyra
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+ ???
+Provides: lucida-speechrecognition
+Description: Speech and vision based intelligent personal assistant
+ Lucida is a speech and vision based intelligent personal assistant
+ inspired by Sirius. Lucida is made up of a set of back-end services,
+ plus a "command center" that calls the correct service according to the
+ user request.
+ .
+ This package contains the default speechrecognition module, i.e. kaldi-gstreamer-asr.
+
