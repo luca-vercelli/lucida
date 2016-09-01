@@ -1,3 +1,4 @@
+LUCIDAROOT=${pwd}/../../
 git clone https://github.com/kaldi-asr/kaldi.git
 cd kaldi
 git checkout 526fcad0a8a739be27687097b29dc9055d03db29

@@ -14,8 +14,8 @@ thrift:
 clean:
 	rm -rf lucidaservice lucidatypes
 
-start_server: 
-	gnome-terminal -x bash -c "python app.py $(filter-out $@,$(MAKECMDGOALS)); read -n1"
+start_server:
+	gnome-terminal -x bash -c "source ${PWD}/../../tools/python_2_7_9/bin/activate && python app.py $(filter-out $@,$(MAKECMDGOALS)); read -n1"
 
 docker:
 	cp ../lucidaservice.thrift .; \
