@@ -11,7 +11,6 @@ fi
 # Default-Stop:      0 1 6
 # Short-Description: Lucida main server
 # Description:       Lucida main server (HTTP, commandcenter)
-#
 ### END INIT INFO
 
 # Author: Luca Vercelli <luca.vercelli.to@gmail.com>
