@@ -1,6 +1,38 @@
-lucida for Debian
+lucida/OpenEphyra for Debian
 ----------------
 
-<possible notes regarding this package - if none, delete this file>
+This is a bad package.
 
+There are problems with the dependencies (folder OpenEphyra/lib):
+
+E: lucida-openephyra: binary-from-other-architecture usr/lib/lucida-openephyra/lib/search/libindri_jni.so
+E: lucida-openephyra: embedded-library usr/lib/lucida-openephyra/lib/search/libindri_jni.so: poppler
+E: lucida-openephyra: missing-dependency-on-libc needed by usr/lib/lucida-openephyra/lib/search/libindri_jni.so
+libindri_jni.so is a binary compiled for amd64.
+
+shlibdeps has been skipped because it fails on libindri_jni.so.
+
+This package contains several jars not packaged in Debian.
+
+This package requires Java 8, currently available in Debian/unstable:
+https://packages.debian.org/sid/openjdk-8-jdk
+https://packages.debian.org/sid/openjdk-8-jdk-headless
+https://packages.debian.org/sid/openjdk-8-jre
+https://packages.debian.org/sid/openjdk-8-jre-headless
+
+By default server listen on port 8083
+
+--- TODO ---
+better handling start / stop 
+
+--- Build and install ---
+build with:
+   dpkg-buildpackage
+(missing required packages will be shown)
+(advanced users may prefer debuild or sbuild)
+
+install the .deb package via GUI or with:
+   dpkg -i lucida*.deb
+   apt-get install -f
+ 
  -- Luca Vercelli <luca.vercelli.to@gmail.com>  Mon, 29 Aug 2016 16:46:35 +0200

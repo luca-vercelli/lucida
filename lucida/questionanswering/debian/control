@@ -3,17 +3,15 @@ Section: misc
 Priority: optional
 Maintainer: Luca Vercelli <luca.vercelli.to@gmail.com>
 Build-Depends: debhelper (>=9), 
- make, default-jdk (>=1.8), ant, quilt
+ make, default-jdk (>=1.8), ant, quilt,
+# liblog4j2-java, libjetty8-java, libmongodb-java, libhtmlparser-java,
+# libtrove-java, libgoogle-gson-java, libcommons-logging-java,
+# libjsoup-java, libthrift-java, libslf4j-java, libservlet3.0-java 
 Standards-Version: 3.9.8
 Homepage: https://github.com/claritylab/lucida
 #Vcs-Git: git://anonscm.debian.org/collab-maint/lucida.git
 #Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/lucida.git
 
-#
-#
-# FIXME: this package contains some jars :(
-#
-#
 Package: lucida-openephyra
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libc,
