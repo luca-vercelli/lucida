@@ -1,0 +1,23 @@
+--- a/CalendarClient/compile-Calendar-client.sh
++++ b/CalendarClient/compile-Calendar-client.sh
+@@ -16,7 +16,7 @@
+ printdivision
+ 
+ # Add jar files to class path
+-export JAVA_CLASS_PATH=$JAVA_CLASS_PATH:lib/libthrift-0.9.3.jar:lib/slf4j-api-1.7.13.jar:lib/slf4j-simple-1.7.13.jar
++export JAVA_CLASS_PATH=$JAVA_CLASS_PATH:/usr/share/java/thrift.jar:/usr/share/java/slf4j-api.jar:/usr/share/java/slf4j-simple.jar
+ 
+ # Use cp flag to avoid cluttering up the CLASSPATH environment variable
+ echo -e "javac -cp $JAVA_CLASS_PATH CalendarClient.java thrift/LucidaService.java thrift/QueryInput.java thrift/QuerySpec.java 
+--- a/CalendarClient/start-Calendar-client.sh
++++ b/CalendarClient/start-Calendar-client.sh
+@@ -1,7 +1,7 @@
+ # Add Thrift classes to class path
+-export JAVA_CLASS_PATH=$JAVA_CLASS_PATH:thrift
++export JAVA_CLASS_PATH=$JAVA_CLASS_PATH:/usr/lib/lucida-calendar/CalendarClient:/usr/lib/lucida-calendar/CalendarClient/thrift
+ # Add other jar files to class path
+-export JAVA_CLASS_PATH=$JAVA_CLASS_PATH:lib/libthrift-0.9.3.jar:lib/slf4j-api-1.7.13.jar:lib/slf4j-simple-1.7.13.jar
++export JAVA_CLASS_PATH=$JAVA_CLASS_PATH:/usr/share/java/thrift.jar:/usr/share/java/slf4j-api.jar:/usr/share/java/slf4j-simple.jar
+ 
+ # run the server
+ java -cp $JAVA_CLASS_PATH CalendarClient "$@"

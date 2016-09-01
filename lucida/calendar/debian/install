@@ -1,0 +1,6 @@
+lib/*  /usr/lib/stanford-nlp
+build/libs/Calendar-1.0.jar /usr/lib/lucida-calendar/build/libs
+build.gradle /usr/lib/lucida-calendar
+settings.gradle /usr/lib/lucida-calendar
+debian/start_server.sh /usr/lib/lucida-calendar
+
