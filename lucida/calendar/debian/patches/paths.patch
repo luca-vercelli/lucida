@@ -21,3 +21,16 @@
  
  # run the server
  java -cp $JAVA_CLASS_PATH CalendarClient "$@"
+--- a/Makefile
++++ b/Makefile
+@@ -3,8 +3,8 @@
+ 
+ thrift:
+ 	@if [ ! -d "src/main/java/thrift" ]; then \
+-		thrift --gen java ../lucidaservice.thrift; \
+-		thrift --gen java ../lucidatypes.thrift; \
++		thrift --gen java ./debian/lucidaservice.thrift; \
++		thrift --gen java ./debian/lucidatypes.thrift; \
+ 		sed -i '1s/^/package thrift;\n/' gen-java/LucidaService.java; \
+ 		sed -i '1s/^/package thrift;\n/' gen-java/QueryInput.java; \
+ 		sed -i '1s/^/package thrift;\n/' gen-java/QuerySpec.java; \
