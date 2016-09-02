@@ -4,7 +4,9 @@ Priority: optional
 Maintainer: Luca Vercelli <luca.vercelli.to@gmail.com>
 Build-Depends: debhelper (>=9), gradle, quilt,
  default-jdk (>=1.8),
- libslf4j-java, libthrift-java
+ libslf4j-java, libthrift-java, thrift-compiler,
+# these are to download stanford-corenlp:
+ wget, unzip
 #and make
 Standards-Version: 3.9.8
 Homepage: https://github.com/claritylab/lucida
