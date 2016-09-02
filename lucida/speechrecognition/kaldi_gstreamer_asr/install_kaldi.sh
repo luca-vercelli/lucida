@@ -1,4 +1,4 @@
-LUCIDAROOT=${pwd}/../../
+LUCIDAROOT=$(pwd)/../../
 git clone https://github.com/kaldi-asr/kaldi.git
 cd kaldi
 git checkout 526fcad0a8a739be27687097b29dc9055d03db29
@@ -18,6 +18,7 @@ make ext
 cd gst-plugin
 sudo apt-get install -y libgstreamer1.0-dev
 sudo apt-get install -y gstreamer1.0-plugins-good
+sudo apt-get install -y gstreamer1.0-plugins-ugly
 sudo apt-get install -y gstreamer1.0-tools
 make depend
 make
