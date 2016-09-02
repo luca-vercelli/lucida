@@ -11,3 +11,16 @@
   
  from controllers import *
  from flask import *
+--- a/Makefile
++++ b/Makefile
+@@ -2,8 +2,8 @@
+ 
+ thrift:
+ 	@if [ ! -d "lucidaservice" ]; then \
+-		thrift --gen py ../lucidaservice.thrift; \
+-		thrift --gen py ../lucidatypes.thrift; \
++		thrift --gen py ./debian/lucidaservice.thrift; \
++		thrift --gen py ./debian/lucidatypes.thrift; \
+ 		cd gen-py; \
+ 		mv * ..; \
+ 		cd ..; \
