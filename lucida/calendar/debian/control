@@ -18,7 +18,6 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
  libslf4j-java, libthrift-java,
  gradle
 #we launch with gradle ... bad idea...
-Provides: lucida-speechrecognition
 Description: Speech and vision based intelligent personal assistant
  Lucida is a speech and vision based intelligent personal assistant
  inspired by Sirius. Lucida is made up of a set of back-end services,
