@@ -19,9 +19,10 @@ VER=0
 	dh $@
 
 override_dh_auto_clean:
+	QUILT_PATCHES="debian/patches" quilt push -a || true
+	dh_auto_clean
 	QUILT_PATCHES="debian/patches" quilt pop -a || true
 	rm -rf .pc
-	dh_auto_clean
 
 override_dh_auto_build:
 	QUILT_PATCHES="debian/patches" quilt push -a
