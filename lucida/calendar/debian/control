@@ -2,10 +2,10 @@ Source: lucida-calendar
 Section: misc
 Priority: optional
 Maintainer: Luca Vercelli <luca.vercelli.to@gmail.com>
-Build-Depends: debhelper (>=9), gradle,
+Build-Depends: debhelper (>=9), gradle, quilt,
  default-jdk (>=1.8),
- libslf4j-java, libthrift-java,
- make
+ libslf4j-java, libthrift-java
+#and make
 Standards-Version: 3.9.8
 Homepage: https://github.com/claritylab/lucida
 #Vcs-Git: git://anonscm.debian.org/collab-maint/lucida.git
@@ -25,5 +25,6 @@ Description: Speech and vision based intelligent personal assistant
  plus a "command center" that calls the correct service according to the
  user request.
  .
- This package contains the default speechrecognition module, i.e. kaldi-gstreamer-asr.
+ This package contains the default speechrecognition module,
+ i.e. kaldi-gstreamer-asr.
 
