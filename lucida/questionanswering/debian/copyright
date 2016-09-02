@@ -3,10 +3,9 @@ Upstream-Name: lucida
 Source: https://github.com/claritylab/lucida
 
 Files: *
-Copyright: <years> <put author's name and email here>
-           <years> <likewise for another author>
-License: GNU GENERAL PUBLIC LICENSE
- Version 3, 29 June 2007
+Copyright: 2014, aluma
+License: GPL-3
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
 
 Files: debian/*
 Copyright: 2016 Luca Vercelli <luca.vercelli.to@gmail.com>
