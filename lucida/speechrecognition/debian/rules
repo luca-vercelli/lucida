@@ -31,7 +31,4 @@ override_dh_install:
 	dh_install
 	QUILT_PATCHES="debian/patches" quilt pop -a
 
-override_dh_shlibdeps:
-	#skip shlibdeps...
-
 

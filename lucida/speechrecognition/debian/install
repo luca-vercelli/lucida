@@ -1,5 +1,8 @@
+kaldi_gstreamer_asr/kaldi/src/lib  /usr/
+kaldi_gstreamer_asr/kaldi/src/bin  /usr/
 kaldi_gstreamer_asr/kaldigstserver  /usr/lib/lucida-kaldi-gst-asr
 kaldi_gstreamer_asr/static  /usr/lib/lucida-kaldi-gst-asr
 kaldi_gstreamer_asr/start.sh  /usr/lib/lucida-kaldi-gst-asr
 kaldi_gstreamer_asr/stop.sh  /usr/lib/lucida-kaldi-gst-asr
 kaldi_gstreamer_asr/etc  /
+debian/start_server.sh /usr/lib/lucida-kaldi-gst-asr

@@ -1,7 +1,8 @@
 lucida/kaldi-gst-asr for Debian
 ----------------
 
-...TODO...
+Source include both Kaldi, kaldi-gtreamer-ast, and some more
+Binary include Kaldi and kaldi-gtreamer-ast
 
 --- Build and install ---
 build with:

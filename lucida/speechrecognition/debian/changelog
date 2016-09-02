@@ -1,5 +1,5 @@
-lucida-kaldi-asr (0-1) unstable; urgency=medium
+lucida-kaldi-gst-asr (0) unstable; urgency=medium
 
   * Initial release
 
- -- Luca Vercelli <luca.vercelli.to@gmail.com>  Thu, 01 Set 2016 16:46:35 +0200
+ -- Luca Vercelli <luca.vercelli.to@gmail.com>  Thu, 01 Sep 2016 16:46:35 +0200
