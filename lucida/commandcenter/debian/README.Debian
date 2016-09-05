@@ -9,14 +9,4 @@ I'm not sure which exact Python dependency are needed
 the source package could produce 2 different binary packages: lucida-core (this)
 and lucida-all (a virtual package depending on all lucida-xxx packages)
 
---- Build and install ---
-build with:
-   dpkg-buildpackage
-(missing required packages will be shown)
-(advanced users may prefer debuild or sbuild)
-
-install the .deb package via GUI or with:
-   dpkg -i lucida*.deb
-   apt-get install -f
- 
  -- Luca Vercelli <luca.vercelli.to@gmail.com>  Mon, 29 Aug 2016 16:46:35 +0200
